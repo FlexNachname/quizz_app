@@ -6,14 +6,14 @@
     <title>Quiz App - Bookmarks</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/profile.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
 
-    <main>
-      <section class="card">
+      <section class="card" form data-js="card">
         <div class="card-header">
           <h3>Question</h3>
           <button class="bookmark active">🔖</button>
@@ -24,7 +24,7 @@
           <span>flexbox</span>
         </div>
         <p class="question-text">Was macht das CSS Flexbox-Modell?</p>
-        <button class="show-answer">Show Answer</button>
+        <button class="show-answer" form data-ja="button">Show Answer</button>
       </section>
 
       <section class="card">
@@ -45,9 +45,9 @@
     <footer>
       <a href="index.html" class="active">🏠</a>
       <a href="bookmarks.html">🔖</a>
-      <a href="profile.html">👤</a>
+      <a href="profile.html">👤</a> 
     </footer>
 
-    <script src="script.js"></script>
+
   </body>
 </html>
