@@ -1,0 +1,122 @@
+/* @import url("profile.css"); */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tags {
+    margin: 0.5rem 0;
+  }
+  
+  .tags span {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.4rem;
+    display: inline-block;
+  }
+  
+  .bookmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .bookmark.active {
+    color: black;
+    border-radius: 50%;
+    background-color: rgb(106, 255, 0);
+  }
+  
+  .bookmark:hover {
+    transform: scale(1.2);
+  }
+  
+  .show-answer {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background-color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .show-answer:hover {
+    background-color: #eee;
+  }
+  
+  .answer-text {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #2a7;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    padding: 0.5rem 0;
+    background-color: #fafafa;
+  }
+  
+  footer button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  footer button.active {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 0.3rem;
+  }
+  
